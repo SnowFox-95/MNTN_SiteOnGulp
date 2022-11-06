@@ -20,9 +20,9 @@ const task =requireDir("./task",{recurse:true});
 // Наблюдение
 // Раскомментируй нужные наблюдатели и закомментируй ненужные
 const watcher=()=>{
-    //$.gulp.watch($.path.html.watch, task.html);
+    $.gulp.watch($.path.html.watch, task.html);
     $.gulp.watch($.path.pug.watch, task.pug);
-    //$.gulp.watch($.path.css.watch, task.css);
+    $.gulp.watch($.path.css.watch, task.css);
     $.gulp.watch($.path.scss.watch, task.scss);
     $.gulp.watch($.path.js.watch, task.js);
     $.gulp.watch($.path.img.watch, task.img);
@@ -32,7 +32,7 @@ const watcher=()=>{
 // Раскомментируй нужные задачи и закомментируй ненужные
 const bulid = $.gulp.series(
     task.clear,
-    $.gulp.parallel (task.pug, /*task.css,task.html, */task.scss,task.js,task.img,task.font)
+    $.gulp.parallel (task.pug,task.css,task.html,task.scss,task.js,task.img,task.font)
     );
 
 const dev = $.gulp.series(
