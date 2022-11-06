@@ -15,5 +15,5 @@ body {
   }
 }
 
-@import "block/*.css";
+@import "./block/";
 
