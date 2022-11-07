@@ -49,6 +49,7 @@ exports.scss = task.scss;
 exports.js = task.js;
 exports.img = task.img;
 exports.font = task.font;
+exports.clear = task.clear;
 
 
 //Сборка
