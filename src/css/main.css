@@ -1,0 +1,43 @@
+@import "block/reset.css";
+@import "block/fonts/ChronicleDisplay.css";
+@import "block/fonts/Gilroy.css";
+
+.no-scroll {
+    overflow-y: hidden;
+}
+
+.container-wide {
+    margin: 0 auto;
+    max-width: 1790px;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.container {
+    max-width: 1492px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+body {
+    font-family: "Gilroy";
+    background: #0b1d26 url("../img/BG.png") no-repeat;
+    background-size: 100% auto;
+
+
+
+    color: #fff;
+}
